@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+1/
+.claude/
+.cursor/
+.agent/
+.mcp-use/
+*.png
+*.pdf
