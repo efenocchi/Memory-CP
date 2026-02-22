@@ -2,6 +2,7 @@ node_modules/
 dist/
 .env
 1/
+2/
 .claude/
 .cursor/
 .agent/
