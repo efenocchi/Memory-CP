@@ -220,7 +220,7 @@ server.tool(
     return widget({
       props: { agents, memories: [], view: "dashboard" as const },
       output: text(
-        `Found ${agents.length} agent(s): ${agents.map((a) => `${a.name} (${a.status})`).join(", ")}`
+        `Found ${agents.length} agent(s):\n${agents.map((a) => `- ${a.name} (id: ${a.id}) — ${a.status}`).join("\n")}`
       ),
     });
   }
