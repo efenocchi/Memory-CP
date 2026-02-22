@@ -21,6 +21,7 @@ export const AgentCard: React.FC<AgentCardProps> = ({ agent, onSendTask }) => {
         <div className={`w-2.5 h-2.5 rounded-full ${status.dot} ring-4 ${status.ring}`} />
         <span className="font-semibold text-sm text-default truncate">{agent.name}</span>
       </div>
+      <div className="text-[10px] text-secondary/50 font-mono -mt-1">id: {agent.id}</div>
       <div className="text-xs text-secondary">
         {status.label}
         {agent.lastActivity && (

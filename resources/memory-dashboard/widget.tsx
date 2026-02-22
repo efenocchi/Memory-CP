@@ -52,7 +52,7 @@ const MemoryDashboard: React.FC = () => {
   const {
     callTool: searchMemories,
     isPending: isSearching,
-  } = useCallTool("search-memories");
+  } = useCallTool("search-memory");
 
   const pinned = state?.pinned ?? [];
 
@@ -184,13 +184,13 @@ const MemoryDashboard: React.FC = () => {
             <div className="mx-6 mb-3">
               <div
                 className={`rounded-xl p-4 ${
-                  taskResult.status === "sent"
+                  taskResult.status === "completed"
                     ? "bg-emerald-500/10 border border-emerald-500/20"
                     : "bg-danger/10 border border-danger/20"
                 }`}
               >
-                <p className={`text-sm font-medium ${taskResult.status === "sent" ? "text-emerald-600 dark:text-emerald-400" : "text-danger"}`}>
-                  {taskResult.status === "sent" ? "Task Sent" : "Task Failed"}
+                <p className={`text-sm font-medium ${taskResult.status === "completed" ? "text-emerald-600 dark:text-emerald-400" : "text-danger"}`}>
+                  {taskResult.status === "completed" ? "Task Completed" : "Task Failed"}
                 </p>
                 <p className="text-xs text-secondary mt-1">{taskResult.message}</p>
               </div>
