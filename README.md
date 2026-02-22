@@ -1,6 +1,6 @@
 # Memory CP
 
-**An MCP server that lets users orchestrate multiple [OpenClaw](https://openclaw.com) AI agents that share persistent memory via [Deep Lake](https://deeplake.ai).**
+**An MCP server that lets users orchestrate multiple [OpenClaw](https://openclaw.ai) AI agents that share persistent memory via [Deep Lake](https://deeplake.ai).**
 
 ## How it works
 
